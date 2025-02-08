@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Manrope", sans-serif;
+  padding-top: 56px;
+  background-image: url(./Images/wavey-fingerprint.svg);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+h4 {
+  color: #ffffff;
+}
+h2,
+h1 {
+  background: linear-gradient(to right, #6366f1, #c317dd);
+  background-clip: text; /* Ensures the gradient is visible on the border */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  color: transparent;
+  display: inline;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+h3 {
+  color: white;
+}
+p {
+  color: #9fa1a5;
+}
+.hero {
+  height: 80dvh;
+}
+.carousel-item video {
+  height: 80dvh;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-inner {
+  overflow: hidden; /* Prevents spacing issues */
+}
+.caption-button {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+.caption-button:hover {
+  background-color: #4d50e6;
+  color: #ffffff;
+}
+.navbar {
+  background-color: #0e0d0d;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  color: white;
+}
+.navbar .nav-link:hover {
+  color: #6366f1;
+}
+.navbar .nav-link.active {
+  font-weight: 500;
+  color: #7779f3;
+}
+.navbar-brand {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+}
+.navbar-brand:hover {
+  color: #4648e7;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.custom-icon {
+  font-size: 3rem;
+  background: rgb(244, 224, 247);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.custom-icon-name {
+  color: #6366f1;
+}
+
+.myimage {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+.myimage img {
+  transition: transform 0.5s ease;
+}
+.myimage:hover {
+  filter: grayscale(0%);
+}
+.myimage:hover img {
+  transform: scale(1.1);
+}
+
+.about-button {
+  background-color: #7779f3;
+  border: none;
+}
+.about-button:hover {
+  background-color: #2f31b6;
+}
+.svg-icons {
+  fill: #007bff;
+  width: 65px;
+  height: 65px;
+}
+.technologies-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.technologies-icon {
+  fill: #007bff;
+  width: 80px;
+  height: 80px;
+  max-height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev {
+  left: -40px;
+}
+.carousel-control-next {
+  right: -40px;
+}
+.skill-name {
+  margin-bottom: 0rem;
+  line-height: 1.3rem;
+}
+.skill-item p {
+  color: #ffffff;
+}
+.progress {
+  height: 5px;
+  margin-bottom: 0rem;
+  border-radius: 3px;
+
+  background-image: linear-gradient(
+    to right,
+    #797979 11%,
+    #494949 51%,
+    #111213 100%
+  );
+}
+.progress-bar {
+  background: linear-gradient(to right, #c317dd, #6366f1);
+  background-color: #b3b3b3;
+  width: 0;
+  transition: width 2s, background-position 0.5s;
+  border-radius: 3px;
+}
+.progress-bar:hover {
+  background-position: right center;
+}
+.expertise-item {
+  background-color: #111213;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-expertise {
+  background-color: #7779f3;
+  border: none;
+  color: #ffffff;
+}
+.btn-expertise:hover {
+  background-color: #2f31b6;
+  border: none;
+  color: #ffffff;
+}
+.feature-item:hover {
+  background-color: #cbe0f1;
+}
+.expertise-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #070707;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.expertise-icon i {
+  background: linear-gradient(to right, #c317dd, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.expertise-content h5 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #a0c1f3;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service-item:hover {
+  background-color: #dde6f3;
+}
+.service-item:hover .service-icon i {
+  transform: scale(1.3);
+}
+
+.nav-pills .nav-link.tab-nav {
+  background-color: #7779f3;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+.nav-pills .nav-link.tab-nav.active {
+  background-color: #4648e7;
+  color: white;
+}
+.nav-pills .nav-link.tab-nav:hover {
+  background-color: #3b3ed8;
+}
+#tabs {
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+.education-container {
+  background-color: #0a0a0a;
+}
+.list-group-item {
+  background-color: #0a0a0a;
+  border: none;
+  line-height: 2rem;
+}
+
+.education-container h5.edu {
+  background: linear-gradient(to right, #6366f1, #c317dd);
+  background-clip: border-box; /* Ensures the gradient is visible on the border */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  font-weight: 500;
+}
+.education-container p.uni {
+  color: #e9e7e7;
+  font-weight: 400;
+}
+.tab-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.tab-img {
+  height: auto;
+}
+.img-fluid {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #0e0d0d;
+  color: white;
+  padding: 20px 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.expertise-item:hover .expertise-icon i {
+  animation: spin 2s ease-in-out infinite;
+}
+.expertise-item:hover .expertise-icon {
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+.tab-nav:hover i {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
+  color: #ffffff;
+}
+.tab-nav:hover h5 {
+  color: white;
+  transition: color 0.3 ease-in-out;
+}
+.sub-style h5 {
+  color: white;
+}
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-content {
+  opacity: 60%;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-color: transparent;
+}
+.portfolio-content p {
+  color: #eaeaec;
+}
+.portfolio-btn {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  color: #d3d3d3;
+  font-weight: 500;
+}
+.portfolio-btn:hover {
+  background-color: #050505;
+}
+.portfolio-item:hover .portfolio-content {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #000000b3;
+}
+
+.portfolio-img img {
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.1);
+}
+/* Add the animation to the progress bars */
+@keyframes progressBarAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress);
+  }
+}
+
+.progress-bar {
+  animation: progressBarAnimation 2s ease-out forwards;
+}
+
+.skill-item:nth-child(1) .progress-bar {
+  --progress: 85%;
+}
+
+.skill-item:nth-child(2) .progress-bar {
+  --progress: 95%;
+}
+
+.skill-item:nth-child(3) .progress-bar {
+  --progress: 90%;
+}
+
+.skill-item:nth-child(4) .progress-bar {
+  --progress: 85%;
+}
+
+/* Back to top button*/
+#backToTop {
+  display: none;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+#backToTop:hover {
+  transform: scale(1.2);
+}
+.typed-text-container {
+  min-height: 90px;
+}
+.card {
+  border: none;
+}
+.bg-custom-gradient {
+  background: url("./Images/contact-bg.png") center/cover,
+    linear-gradient(135deg, rgba(106, 0, 244, 0.7), rgba(177, 109, 216, 0.7));
+  color: white;
+}
+.contact-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.contact-link:hover {
+  color: #e0e0e0;
+  border-bottom-color: #e0e0e0;
+}
+
+.footer-mail {
+  color: #6366f1;
+}
+.footer-mail:hover {
+  color: #5456e7;
+}
+
+/* submit button color */
+button.btn-primary {
+  background-color: #5c5fe1;
+  border-color: #101111;
+  color: white;
+  font-weight: 500;
+}
+
+/*  button color on hover */
+button.btn-primary:hover {
+  background-color: #4d4fd8;
+  border-color: #080808;
+}
+
+.bg-dark .contact-icon {
+  color: #4d4fd8;
+}
+.bg-dark .contact-icon:hover {
+  color: #393cc4;
+}
